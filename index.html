@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>cal</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .btn {
+        background: rgba(30, 30, 30, 0.4);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .btnOp {
+        background: rgba(30, 30, 30, 0.4);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex justify-center items-center h-screen w-screen bg-black overflow-hidden"
+  >
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <div id="themeLabel"></div>
+      <div
+        id="Calculator"
+        class="grid grid-cols-4 gap-3 p-4 rounded-2xl w-80 pb-6"
+      >
+        <div id="displayContainer" class="col-span-4">
+          <input
+            id="display"
+            type="text"
+            readonly
+            class="w-full text-right text-5xl font-light p-2 rounded text-white bg-transparent border-none outline-none"
+            value="0"
+          />
+        </div>
+        <button
+          class="btn bg-zinc-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          C
+        </button>
+        <button
+          class="btn bg-zinc-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          AC
+        </button>
+        <button
+          class="btn bg-zinc-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          %
+        </button>
+        <button
+          class="btnOp bg-orange-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          /
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          7
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          8
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          9
+        </button>
+        <button
+          class="btnOp bg-orange-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          *
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          4
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          5
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          6
+        </button>
+        <button
+          class="btnOp bg-orange-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          -
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          1
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          2
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          3
+        </button>
+        <button
+          class="btnOp bg-orange-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          +
+        </button>
+        <button
+          class="btn bg-zinc-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          +/-
+        </button>
+        <button
+          class="btnNo bg-zinc-600 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          0
+        </button>
+        <button
+          class="btn bg-zinc-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          .
+        </button>
+        <button
+          class="btn bg-orange-400 text-white p-4 rounded-full aspect-square text-lg hover:brightness-125 active:brightness-75 transition-all duration-150"
+        >
+          =
+        </button>
+      </div>
+      <div id="themeSwitcher">
+        <div class="dot" data-theme="0"></div>
+        <div class="dot" data-theme="1"></div>
+        <div class="dot" data-theme="2"></div>
+        <div class="dot" data-theme="3"></div>
+        <div class="dot" data-theme="4"></div>
+        <div class="dot" data-theme="5"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
