@@ -110,6 +110,8 @@ open index.html
 ├── style.css       # glass effect, gradients, dot styles, animations
 ├── script.js       # all calculator logic + theme switching
 └── README.md
+└── .gitattribute
+└── site.webmanifest   #fevicon related
 └── screenshots
     └── blood-moon.png
     └── deep-ocean.png
@@ -117,7 +119,13 @@ open index.html
     └── nebula.png
     └── venetian-gold.png
     └── volcanic.png
-
+    └── android-chrome-192x192.png     #fevicon related png's----
+    └── android-chrome-512x512.png
+    └── apple-touch-icon.png
+    └── favicon-16x16.png
+    └── favicon-32x32.png
+    └── favicon.ico
+    └── fevicon.png
 ```
 
 ---
