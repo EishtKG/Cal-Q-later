@@ -1,6 +1,6 @@
 # 🧮 Cal-Q-Later(just a catchy name)
 
-## Basic Calculator with few Themes website
+## Basic Calculator with few Themes 
 > **This project was built as a learning exercise to understand DOM manipulation and the JavaScript frontend workflow.** Every feature was coded step by step — from scratch — without using any frameworks or libraries beyond Tailwind CSS for styling.
 
 🔗 **Live Demo:** [eishtkg.github.io/Cal-Q-Later](https://eishtkg.github.io/Cal-Q-later/)
