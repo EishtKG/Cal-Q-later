@@ -79,10 +79,10 @@ button {
     filter: blur(10px);
     transition: opacity 0.5s, filter 0.5s;
 }
+
 h1 {
-    background: linear-gradient(135deg, #f5e642, #d4a843);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #f97316;
+    text-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 3px;
